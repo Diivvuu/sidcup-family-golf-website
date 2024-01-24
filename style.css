@@ -22,7 +22,7 @@ body {
 #cursor-blur {
   height: 500px;
   width: 500px;
-  background-color: #a6df0a;
+  background-color: rgba(150, 193, 30, 0.452);
   border-radius: 50%;
   position: fixed;
   filter: blur(100px);
@@ -41,12 +41,12 @@ body {
   z-index: 999;
 }
 #nav img {
-  height: 5vw;
+  height: 4.5vw;
 }
 #nav h4 {
   font-weight: 500;
   /* cursor: ; */
-  font-size: 1.2vw;
+  font-size: 1.15vw;
 }
 video {
   height: 100%;
@@ -71,7 +71,7 @@ video {
   z-index: 1;
 }
 #page1 h1 {
-  font-size: 7vw;
+  font-size: 7.5vw;
   font-weight: 900;
   position: relative;
 }
@@ -82,7 +82,7 @@ video {
   margin-bottom: 25px;
 }
 #page1 p {
-  font-size: 1.1vw;
+  font-size: 1.25vw;
   font-weight: 500;
   width: 40%;
 }
