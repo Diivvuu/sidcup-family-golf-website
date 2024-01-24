@@ -11,21 +11,20 @@ body {
   width: 100%;
 }
 
-#nav{
+#nav {
   height: 145px;
   width: 100%;
-  background-color: red;
+  /* background-color: red; */
   display: flex;
   align-items: center;
   justify-content: flex-start;
   padding: 0 100px;
   gap: 3vw;
   z-index: 99;
-  
 }
-#nav img{
+#nav img {
   height: 5vw;
 }
-#nav h4{
+#nav h4 {
   text-transform: uppercase;
 }
