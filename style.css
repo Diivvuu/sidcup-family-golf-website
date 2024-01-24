@@ -17,7 +17,17 @@ body {
   border-radius: 50%;
   position: fixed;
   z-index: 99;
-  /* transition: all linear 0.1s; */
+  transition: all linear 0.1s;
+}
+#cursor-blur {
+  height: 500px;
+  width: 500px;
+  background-color: #a6df0a;
+  border-radius: 50%;
+  position: fixed;
+  filter: blur(100px);
+  z-index: 10;
+  transition: all linear 0.3s;
 }
 #nav {
   height: 130px;
