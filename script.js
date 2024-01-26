@@ -6,3 +6,11 @@ document.addEventListener("mousemove", function(dets){
     blur.style.left = dets.x - 250 + "px"
     blur.style.top = dets.y -250 + "px"
 })
+
+// cursor on navbar pending
+
+//navbar gsap pending
+// gsap.to("#nav", {
+    // backgroundColor: #000,
+    // 
+// })
