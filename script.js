@@ -19,5 +19,31 @@ h4all.forEach(function(elem){
         crsr.style.border = "0px solid #95c11e";
         crsr.style.backgroundColor = "#95c11e";
     })
-})
+});
+
+gsap.to("#nav", {
+    backgroundColor: "#000",
+    duration: 0.5,
+    height: "120px",
+    scrollTrigger: {
+        trigger: "#nav",
+        scroller: "body",
+        // markers: true,
+        start: "top -10%",
+        end: "top -11%",
+        scrub: 1,
+    },
+});
+
+gsap.to("#main", {
+    backgroundColor: "#000",
+    scrollTrigger: {
+        scroller: "body",
+        trigger: "#main",
+        markers: true,
+        start: "top -20%",
+        end: "top -70%",
+        scrub: 2,
+    },
+});
 

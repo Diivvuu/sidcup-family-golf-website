@@ -193,3 +193,59 @@ video {
   font-size: 20px;
   line-height: 25px;
 }
+
+#card-container {
+  /* background-color: red; */
+  height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 70px;
+  position: relative;
+  z-index: 10;
+}
+.card {
+  height: 80%;
+  width: 24%;
+  background-size: cover;
+  border-radius: 20px;
+  overflow: hidden;
+  background-position: center;
+  transition: all ease 0.6s;
+}
+#card1 {
+  background-image: url(./Assests/card1.avif);
+}
+#card2 {
+  background-image: url(./Assests/card2.webp);
+}
+#card3 {
+  background-image: url(./Assests/card3.avif);
+}
+.overlay {
+  height: 100%;
+  width: 100%;
+  background-color: #95c11e;
+  padding: 30px;
+  padding-top: 140px;
+  opacity: 0;
+  transition: all ease 0.9s;
+}
+.overlay h4 {
+  color: #000;
+  font-size: 40px;
+  text-transform: uppercase;
+  white-space: nowrap;
+  margin-bottom: 20px;
+  font-weight: 800;
+}
+.overlay p {
+  color: #000;
+  font-size: 17px;
+}
+.overlay:hover {
+  opacity: 1;
+}
+.card:hover {
+  transform: rotate3d(-1, -1, 0, 25deg);
+}
