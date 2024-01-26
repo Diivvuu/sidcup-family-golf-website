@@ -10,13 +10,13 @@ body {
   height: 100%;
   width: 100%;
 }
-/* *::selection { */
-/* background-color: #fff; */
-/* color: #95c11e; */
-/* } */
-/* body{
+*::selection {
+  background-color: #fff;
+  color: #95c11e;
+}
+body {
   overflow-x: hidden;
-} */
+}
 #cursor {
   height: 20px;
   width: 20px;
@@ -123,4 +123,73 @@ video {
 #page1 #arrow:hover {
   scale: 0.4;
   background-color: #95c11e;
+}
+
+#scroller {
+  white-space: nowrap;
+  overflow-x: auto;
+  overflow-y: hidden;
+  position: relative;
+  z-index: 10;
+}
+#scroller::-webkit-scrollbar {
+  display: none;
+}
+#scroller-inside {
+  display: inline-block;
+  white-space: nowrap;
+  animation: scroll 40s linear infinite;
+}
+#scroller h4 {
+  text-transform: uppercase;
+  display: inline-block;
+  font-size: 120px;
+  font-weight: 900;
+  margin-right: 30px;
+  transition: all linear 0.3s;
+  color: #000;
+  -webkit-text-stroke: 2px #ffffff;
+}
+#scroller h4:hover {
+  color: #95c11e;
+  -webkit-text-stroke: 2px #95c11e;
+}
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+#about-us {
+  height: 40vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  position: relative;
+  z-index: 10;
+  padding: 0 50px;
+}
+#about-us-inside {
+  width: 40%;
+  text-align: center;
+}
+#about-us img {
+  height: 250px;
+  width: 280px;
+  border-radius: 5%;
+  object-fit: cover;
+}
+#about-us h3 {
+  font-size: 60px;
+  font-weight: 800;
+  margin-bottom: 20px;
+}
+#about-us p {
+  margin-top: 10px;
+  font-size: 20px;
+  line-height: 25px;
 }
