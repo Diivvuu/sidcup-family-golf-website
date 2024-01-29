@@ -299,3 +299,48 @@ video {
   top: 60%;
   right: 18%;
 }
+#page4 {
+  height: 30vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 70px;
+}
+#page4 h2 {
+  height: 100%;
+  width: 100%;
+  background-color: #95c11e;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 900;
+  color: #000;
+  text-transform: uppercase;
+  font-size: 2vw;
+  position: absolute;
+  z-index: 10;
+  transition: all ease 0.5s;
+}
+.element-card {
+  height: 70%;
+  width: 25%;
+  overflow: hidden;
+  position: relative;
+  border-radius: 5%;
+  transition: all ease 0.5s;
+}
+.element-card img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  scale: 1.1;
+  transition: all ease 0.5s;
+}
+.element-card:hover h2 {
+  color: #fff;
+  background-color: transparent;
+}
+.element-card:hover img {
+  scale: 1;
+}
