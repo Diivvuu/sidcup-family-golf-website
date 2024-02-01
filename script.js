@@ -40,10 +40,49 @@ gsap.to("#main", {
     scrollTrigger: {
         scroller: "body",
         trigger: "#main",
-        markers: true,
+        // markers: true,
         start: "top -20%",
         end: "top -70%",
         scrub: 2,
     },
 });
 
+
+gsap.from("#about-us img, #about-us-inside", {
+    y:90,
+    opacity:0,
+    duration:1,
+    scrollTrigger:{
+        trigger:"#about-us",
+        scroller: "body",
+        // markers:true,
+        start:"top 70%",
+        end: "top 63%",
+        scrub:1,
+    },
+});
+gsap.from("#colon1", {
+  y: -70,
+  x: -70,
+  scrollTrigger: {
+    trigger: "#colon1",
+    scroller: "body",
+    // markers:true,
+    start: "top 65%",
+    end: "top 45%",
+    scrub: 4,
+  },
+});
+gsap.from("#colon2", {
+  y: 70,
+  x: 70,
+  scrollTrigger: {
+    trigger: "#colon1",
+    scroller: "body",
+    // markers:true,
+    start: "top 65%",
+    end: "top 45%",
+    scrub: 4,
+  },
+});
+gsap.from("#page4 h1")
